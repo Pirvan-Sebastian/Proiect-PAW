@@ -93,6 +93,9 @@
     <Compile Include="Repositories\CandidatRepository.cs" />
     <Compile Include="Repositories\DosarRepository.cs" />
     <Compile Include="Repositories\FacultateRepository.cs" />
+    <EmbeddedResource Include="Forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormEditareCandidat.resx">
       <DependentUpon>FormEditareCandidat.cs</DependentUpon>
     </EmbeddedResource>

@@ -12,3 +12,4 @@ D:\Cursuri\fACULTATE\PAW_Proiect\Proiect-PAW\ProiectAdmitere\obj\Debug\ProiectAd
 D:\Cursuri\fACULTATE\PAW_Proiect\Proiect-PAW\ProiectAdmitere\obj\Debug\ProiectAdmitere.Forms.FormEditareCandidat.resources
 D:\Cursuri\fACULTATE\PAW_Proiect\Proiect-PAW\ProiectAdmitere\obj\Debug\ProiectAdmitere.Forms.FormEditareDosar.resources
 D:\Cursuri\fACULTATE\PAW_Proiect\Proiect-PAW\ProiectAdmitere\obj\Debug\ProiectAdmitere.Forms.FormEditareFacultate.resources
+D:\Cursuri\fACULTATE\PAW_Proiect\Proiect-PAW\ProiectAdmitere\obj\Debug\ProiectAdmitere.Form1.resources
