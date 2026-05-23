@@ -1,0 +1,14 @@
+D:\Cursuri\fACULTATE\PAW_Proiect\Proiect-PAW\ProiectAdmitere\bin\Debug\AdmitereDB.mdf
+D:\Cursuri\fACULTATE\PAW_Proiect\Proiect-PAW\ProiectAdmitere\bin\Debug\AdmitereDB_log.ldf
+D:\Cursuri\fACULTATE\PAW_Proiect\Proiect-PAW\ProiectAdmitere\bin\Debug\ProiectAdmitere.exe.config
+D:\Cursuri\fACULTATE\PAW_Proiect\Proiect-PAW\ProiectAdmitere\bin\Debug\ProiectAdmitere.exe
+D:\Cursuri\fACULTATE\PAW_Proiect\Proiect-PAW\ProiectAdmitere\bin\Debug\ProiectAdmitere.pdb
+D:\Cursuri\fACULTATE\PAW_Proiect\Proiect-PAW\ProiectAdmitere\obj\Debug\ProiectAdmitere.csproj.AssemblyReference.cache
+D:\Cursuri\fACULTATE\PAW_Proiect\Proiect-PAW\ProiectAdmitere\obj\Debug\ProiectAdmitere.Properties.Resources.resources
+D:\Cursuri\fACULTATE\PAW_Proiect\Proiect-PAW\ProiectAdmitere\obj\Debug\ProiectAdmitere.csproj.GenerateResource.cache
+D:\Cursuri\fACULTATE\PAW_Proiect\Proiect-PAW\ProiectAdmitere\obj\Debug\ProiectAdmitere.csproj.CoreCompileInputs.cache
+D:\Cursuri\fACULTATE\PAW_Proiect\Proiect-PAW\ProiectAdmitere\obj\Debug\ProiectAdmitere.exe
+D:\Cursuri\fACULTATE\PAW_Proiect\Proiect-PAW\ProiectAdmitere\obj\Debug\ProiectAdmitere.pdb
+D:\Cursuri\fACULTATE\PAW_Proiect\Proiect-PAW\ProiectAdmitere\obj\Debug\ProiectAdmitere.Forms.FormEditareCandidat.resources
+D:\Cursuri\fACULTATE\PAW_Proiect\Proiect-PAW\ProiectAdmitere\obj\Debug\ProiectAdmitere.Forms.FormEditareDosar.resources
+D:\Cursuri\fACULTATE\PAW_Proiect\Proiect-PAW\ProiectAdmitere\obj\Debug\ProiectAdmitere.Forms.FormEditareFacultate.resources

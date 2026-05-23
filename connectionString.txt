@@ -1,0 +1,3 @@
+Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Cursuri\fACULTATE\PAW_Proiect\Proiect-PAW\ProiectAdmitere\AdmitereDB.mdf;Integrated Security=True
+
+Repositories de updatat connString in cazul in care lucrez pe laptop! ( sau mai simplu parsec connection)
