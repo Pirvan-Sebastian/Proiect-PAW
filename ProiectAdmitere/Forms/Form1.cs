@@ -31,6 +31,11 @@ namespace ProiectAdmitere
             dgvFacultati.DataSource=repoFacultate.GetAll();
             dgvDosare.DataSource=repoDosar.GetAll();
 
+
+            cbFacultateFiltru.DataSource = repoFacultate.GetAll();
+            cbFacultateFiltru.DisplayMember = "Nume";
+            cbFacultateFiltru.ValueMember = "Id";
+
             if (dgvDosare.Columns.Count > 0)
             {
                 //ascund id ul 
@@ -159,6 +164,39 @@ namespace ProiectAdmitere
                 repoDosar.Delete((int)dgvDosare.SelectedRows[0].Cells["Id"].Value);
                 IncarcaToateDatele();
             }
+        }
+        //---Afisare Admisi----
+
+       
+
+        private void cbFacultateFiltru_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbFacultateFiltru.SelectedValue is int idFacultateSelectata)
+            {
+                var facultate = repoFacultate.GetAll().FirstOrDefault(f => f.Id == idFacultateSelectata);
+
+                if (facultate != null)
+                {
+                    int nrLocuri = facultate.NumarLocuri;
+                    var admisi = repoDosar.GetAll()
+                                         .Where(d => d.IdFacultate == idFacultateSelectata)
+                                         .OrderByDescending(d => d.MedieAdmitere)
+                                         .Take(nrLocuri).ToList();
+                    dgvAdmisi.DataSource = admisi;
+
+                    if (dgvAdmisi.Columns.Count > 0)
+                    {
+                        dgvAdmisi.Columns["Id"].Visible = false;
+                        dgvAdmisi.Columns["IdCandidat"].Visible = false;
+                        dgvAdmisi.Columns["IdFacultate"].Visible = false;
+                        dgvAdmisi.Columns["NumeFacultate"].Visible = false;
+                    }
+                }
+            }
+        }
+        private void dgvAdmisi_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

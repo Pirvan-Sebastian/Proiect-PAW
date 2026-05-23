@@ -41,6 +41,10 @@
             this.btnStergeDosar = new System.Windows.Forms.Button();
             this.btnAdaugaDosar = new System.Windows.Forms.Button();
             this.dgvDosare = new System.Windows.Forms.DataGridView();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbFacultateFiltru = new System.Windows.Forms.ComboBox();
+            this.dgvAdmisi = new System.Windows.Forms.DataGridView();
             this.TabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCandidati)).BeginInit();
@@ -48,6 +52,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvFacultati)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDosare)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAdmisi)).BeginInit();
             this.SuspendLayout();
             // 
             // TabControl
@@ -55,6 +61,7 @@
             this.TabControl.Controls.Add(this.tabPage1);
             this.TabControl.Controls.Add(this.tabPage2);
             this.TabControl.Controls.Add(this.tabPage3);
+            this.TabControl.Controls.Add(this.tabPage4);
             this.TabControl.Location = new System.Drawing.Point(12, 12);
             this.TabControl.Name = "TabControl";
             this.TabControl.SelectedIndex = 0;
@@ -190,6 +197,48 @@
             this.dgvDosare.TabIndex = 0;
             this.dgvDosare.DoubleClick += new System.EventHandler(this.dgvDosare_DoubleClick);
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.dgvAdmisi);
+            this.tabPage4.Controls.Add(this.cbFacultateFiltru);
+            this.tabPage4.Controls.Add(this.label1);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(768, 400);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Afisare Candidati Admisi";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 359);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(87, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Alege Facultatea";
+            // 
+            // cbFacultateFiltru
+            // 
+            this.cbFacultateFiltru.FormattingEnabled = true;
+            this.cbFacultateFiltru.Location = new System.Drawing.Point(132, 356);
+            this.cbFacultateFiltru.Name = "cbFacultateFiltru";
+            this.cbFacultateFiltru.Size = new System.Drawing.Size(181, 21);
+            this.cbFacultateFiltru.TabIndex = 1;
+            this.cbFacultateFiltru.SelectedIndexChanged += new System.EventHandler(this.cbFacultateFiltru_SelectedIndexChanged);
+            // 
+            // dgvAdmisi
+            // 
+            this.dgvAdmisi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAdmisi.Location = new System.Drawing.Point(0, 0);
+            this.dgvAdmisi.Name = "dgvAdmisi";
+            this.dgvAdmisi.ReadOnly = true;
+            this.dgvAdmisi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvAdmisi.Size = new System.Drawing.Size(768, 350);
+            this.dgvAdmisi.TabIndex = 2;
+            this.dgvAdmisi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAdmisi_CellContentClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,6 +254,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvFacultati)).EndInit();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDosare)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAdmisi)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -224,6 +276,10 @@
         private System.Windows.Forms.Button btnAdaugaFacultate;
         private System.Windows.Forms.Button btnStergeDosar;
         private System.Windows.Forms.Button btnAdaugaDosar;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbFacultateFiltru;
+        private System.Windows.Forms.DataGridView dgvAdmisi;
     }
 }
 
