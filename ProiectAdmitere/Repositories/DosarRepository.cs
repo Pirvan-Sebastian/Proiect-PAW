@@ -18,7 +18,15 @@ namespace ProiectAdmitere.Repositories
             using (SqlConnection con = new SqlConnection(connString))
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("SELECT * FROM Dosare", con);
+
+                string query = @"
+            SELECT d.Id, d.IdCandidat, d.IdFacultate, d.NotaBac, d.NotaExamen,
+                   c.NumeComplet AS NumeCandidat, f.Nume AS NumeFacultate
+            FROM Dosare d
+            INNER JOIN Candidati c ON d.IdCandidat = c.Id
+            INNER JOIN Facultati f ON d.IdFacultate = f.Id";
+
+                SqlCommand cmd = new SqlCommand(query, con);
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
                     while (reader.Read())
@@ -29,7 +37,9 @@ namespace ProiectAdmitere.Repositories
                             IdCandidat = (int)reader["IdCandidat"],
                             IdFacultate = (int)reader["IdFacultate"],
                             NotaBac = Convert.ToDouble(reader["NotaBac"]),
-                            NotaExamen = Convert.ToDouble(reader["NotaExamen"])
+                            NotaExamen = Convert.ToDouble(reader["NotaExamen"]),
+                            NumeCandidat = reader["NumeCandidat"].ToString(),
+                            NumeFacultate = reader["NumeFacultate"].ToString()
                         });
                     }
                 }

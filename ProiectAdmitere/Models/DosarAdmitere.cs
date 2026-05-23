@@ -13,6 +13,8 @@ namespace ProiectAdmitere.Models
         public int IdFacultate { get; set; }
         public double NotaBac { get; set; }
         public double NotaExamen { get; set; }
+        public string NumeCandidat { get; set; }
+        public string NumeFacultate { get; set; }
 
         public double MedieAdmitere 
         { get 

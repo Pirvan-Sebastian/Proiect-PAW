@@ -30,6 +30,13 @@ namespace ProiectAdmitere
             dgvCandidati.DataSource = repoCandidat.GetAll();
             dgvFacultati.DataSource=repoFacultate.GetAll();
             dgvDosare.DataSource=repoDosar.GetAll();
+
+            if (dgvDosare.Columns.Count > 0)
+            {
+                //ascund id ul 
+                dgvDosare.Columns["IdCandidat"].Visible = false;
+                dgvDosare.Columns["IdFacultate"].Visible = false;
+            }
         }
         //--Candidati--
         private void btnAdaugaCandidat_Click(object sender, EventArgs e)
